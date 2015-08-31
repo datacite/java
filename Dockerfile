@@ -11,5 +11,6 @@ RUN \
   rm -rf /var/cache/oracle-jdk8-installer
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
+ENV PATH $M2:$PATH
 
 CMD ["java", "-version"]
