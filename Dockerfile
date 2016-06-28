@@ -1,4 +1,5 @@
-FROM ubuntu:14.04
+FROM phusion/baseimage:0.9.18
+MAINTAINER Martin Fenner "mfenner@datacite.org"
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 ENV CATALINA_HOME /usr/share/tomcat7
