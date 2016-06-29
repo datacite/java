@@ -1,0 +1,21 @@
+# Location of the JVM temporary directory
+# WARNING: This directory will be destroyed and recreated at every startup !
+#JVM_TMP=/tmp/tomcat7-temp
+
+# If you run Tomcat on port numbers that are all higher than 1023, then you
+# do not need authbind.  It is used for binding Tomcat to lower port numbers.
+# NOTE: authbind works only with IPv4.  Do not enable it when using IPv6.
+# (yes/no, default: no)
+#AUTHBIND=no
+JAVA_HOME=/usr/lib/jvm/java-8-oracle
+
+# Run Tomcat as this user ID. Not setting this or leaving it blank will use the
+# default of tomcat7.
+TOMCAT7_USER=app
+
+# Run Tomcat as this group ID. Not setting this or leaving it blank will use
+# the default of tomcat7.
+TOMCAT7_GROUP=app
+
+# from https://www.digitalocean.com/community/tutorials/how-to-install-apache-tomcat-7-on-ubuntu-14-04-via-apt-get
+JAVA_OPTS="-Djava.security.egd=file:/dev/./urandom -Djava.awt.headless=true -Xmx512m -XX:MaxPermSize=256m -XX:+UseConcMarkSweepGC"
