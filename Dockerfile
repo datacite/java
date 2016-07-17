@@ -1,4 +1,4 @@
-FROM phusion/baseimage:0.9.18
+FROM phusion/baseimage:0.9.19
 MAINTAINER Martin Fenner "mfenner@datacite.org"
 
 # Set correct environment variables
